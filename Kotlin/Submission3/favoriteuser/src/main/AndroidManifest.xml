@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.makhalibagas.favoriteuser">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="com.makhalibagas.githubuser.READ_DATABASE" />
+    <uses-permission android:name="com.makhalibagas.githubuser.WRITE_DATABASE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_github_black"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/ic_github_black"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".ui.activity.SplashActivity"></activity>
+        <activity android:name=".ui.activity.DetailActivity" />
+        <activity android:name=".ui.activity.FavoriteActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ui.activity.MainActivity" />
+        <activity android:name=".ui.activity.SettingsActivity" />
+        <activity android:name=".ui.activity.UserActivity" />
+    </application>
+
+</manifest>
